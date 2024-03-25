@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #74c69d;
+}
+.main-navigation .company-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.main-navigation .company-information .company-logo {
+  height: 49px;
+  margin-right: 1rem;
+}
+.main-navigation .company-information .company-name {
+  font-size: 2.2rem;
+  color: white;
+}
+.main-navigation .pages-navigation {
+  display: flex;
+  align-items: center;
+}
+.main-navigation .pages-navigation .check {
+  display: none;
+}
+.main-navigation .pages-navigation ul {
+  list-style: none;
+}
+.main-navigation .pages-navigation ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 6px;
+}
+.main-navigation .pages-navigation ul li a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+.main-navigation .pages-navigation ul li:hover {
+  background-color: rgb(238, 166, 33);
+  border-radius: 8px;
+  width: 90%;
+  transition-duration: 1000ms;
+}
+@media screen and (max-width: 990px) {
+  .main-navigation .pages-navigation .main-nav--icon {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+  .main-navigation .pages-navigation ul {
+    position: fixed;
+    top: 60px;
+    left: -100vw;
+    background-color: rgba(182, 182, 182, 0.95);
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    transition: left 2000ms ease;
+  }
+  .main-navigation .pages-navigation ul li {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .main-navigation .pages-navigation .check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.about-company,
+.partners,
+.advantages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advatages-description--btn,
+.about-partners-info--btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+
+.about-company {
+  background-color: #74c69d;
+}
+.about-company h6 {
+  margin: 0;
+}
+
+.about-description button {
+  padding: 12px 48px;
+  border: none;
+  border-radius: 8px;
+}
+
+.partners ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #74c69d;
+}
+.footer .footer-media--list ul {
+  list-style: none;
+}
+.footer .footer-media--list ul li {
+  width: 100%;
+}
+
+@media screen and (min-width: 991px) {
+  .main-navigation {
+    height: 80px;
+    top: 200px;
+  }
+  .main-nav--icon {
+    display: none;
+  }
+  .main-navigation,
+  .about-company,
+  .partners,
+  .advantages,
+  footer {
+    padding: 3rem 8rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .main-navigation,
+  .about-company,
+  .partners,
+  .advantages,
+  footer {
+    padding: 20px;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-media--list ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer-media--list ul li {
+    margin-right: 5rem;
+  }
+  .footer .footer-media--list ul li a {
+    color: #ffffff;
+  }
+  .footer .footer-media--list ul:last-child {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
