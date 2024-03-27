@@ -92,13 +92,17 @@ body {
 
 .about-company,
 .partners,
-.advantages {
+.advantages,
+.why-us,
+.team {
   width: 100%;
   @include d-flex-col-align-center;
 }
 
 .advatages-description--btn,
-.about-partners-info--btn {
+.about-partners-info--btn,
+.whyus-description--btn,
+.team--btn {
   @include secondary-Button;
 }
 
@@ -125,6 +129,7 @@ body {
 
 .footer {
   background-color: $primaryColor;
+  color: $whiteColor;
   .footer-media--list {
     ul {
       list-style: none;
@@ -150,8 +155,29 @@ body {
   .about-company,
   .partners,
   .advantages,
+  .why-us,
+  .team,
   footer {
     @include padding-BigScreen;
+  }
+
+  .footer {
+    width: 100%;
+    @include d-flex-col-align-center;
+    .footer-media--list ul {
+      @include d-flex-row;
+
+      li {
+        margin-right: 5rem;
+
+        a {
+          color: $whiteColor;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -160,6 +186,8 @@ body {
   .about-company,
   .partners,
   .advantages,
+  .why-us,
+  .team,
   footer {
     @include padding-SmallScreen;
   }
@@ -177,7 +205,6 @@ body {
           color: $whiteColor;
         }
       }
-
       &:last-child {
         margin-right: 0;
       }

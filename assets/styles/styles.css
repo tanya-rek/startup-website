@@ -82,7 +82,9 @@ body {
 
 .about-company,
 .partners,
-.advantages {
+.advantages,
+.why-us,
+.team {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -90,7 +92,9 @@ body {
 }
 
 .advatages-description--btn,
-.about-partners-info--btn {
+.about-partners-info--btn,
+.whyus-description--btn,
+.team--btn {
   padding: 14px 30px;
   border-radius: 8px;
   background-color: black;
@@ -116,6 +120,7 @@ body {
 
 .footer {
   background-color: #74c69d;
+  color: #ffffff;
 }
 .footer .footer-media--list ul {
   list-style: none;
@@ -136,8 +141,29 @@ body {
   .about-company,
   .partners,
   .advantages,
+  .why-us,
+  .team,
   footer {
     padding: 3rem 8rem;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-media--list ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer-media--list ul li {
+    margin-right: 5rem;
+  }
+  .footer .footer-media--list ul li a {
+    color: #ffffff;
+  }
+  .footer .footer-media--list ul:last-child {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 990px) {
@@ -145,6 +171,8 @@ body {
   .about-company,
   .partners,
   .advantages,
+  .why-us,
+  .team,
   footer {
     padding: 20px;
   }
